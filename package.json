@@ -13,5 +13,8 @@
     "Actions"
   ],
   "author": "Ahmed Mahmoud",
-  "license": "MIT"
+  "license": "MIT",
+  "devDependencies": {
+    "jest": "^26.6.0"
+  }
 }
