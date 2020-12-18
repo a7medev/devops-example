@@ -1,0 +1,17 @@
+{
+  "name": "devops",
+  "version": "1.0.0",
+  "description": "DevOps example with Docker & CI/CD with GitHub Actions",
+  "main": "index.js",
+  "scripts": {
+    "start": "node src/index.js"
+  },
+  "keywords": [
+    "DevOps",
+    "Docker",
+    "GitHub",
+    "Actions"
+  ],
+  "author": "Ahmed Mahmoud",
+  "license": "MIT"
+}
