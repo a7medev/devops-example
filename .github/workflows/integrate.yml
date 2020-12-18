@@ -1,3 +1,5 @@
+name: CI
+
 on:
   push:
     branches: [main]
@@ -7,9 +9,16 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
-      - uses: actions/checkout@v2
-      - uses: actions/setup-node@v1
+      - name: Checkout
+        uses: actions/checkout@v2
+
+      - name: Setup Node.js
+        uses: actions/setup-node@v1
         with:
           node-version: 14.x
-      - run: npm install
+
+      - name: Install packages
+        run: npm install
+
+      - name: Run tests
       - run: npm test
